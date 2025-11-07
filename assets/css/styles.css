@@ -294,4 +294,228 @@ button{
     margin-bottom: 0;
 }
 
+/* === CONTACT === */
+.contact_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 4rem auto 2rem;
+    gap: 4rem;
+}
+
+.contact_info h4{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--purple-500);
+}
+
+.contact_info p{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: var(--gray-400);
+    margin-bottom: 2rem;
+}
+
+.social_container{
+    display: flex;
+    gap: 3rem;
+}
+
+.social_icon{
+    width: 4rem;
+    height: 4rem;
+    padding: 0.75rem;
+    background-color: var(--gray-100);
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.social_icon:hover{
+    background-color: var(--purple-600);
+    transform: translateY(-0.25rem);
+    box-shadow: var(--shadow-md);
+}
+
+.social_icon img{
+    width: 100%;
+    filter: brightness(0) saturate(100%);
+}
+
+.social_icon:hover img{
+    filter: brightness(0) invert(100%);
+}
+
+/* Formulário de Contato */
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+form label{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--black-800);
+}
+
+form input,
+textarea{
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 0.25rem solid var(--gray-200);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    background-color: var(--white);
+    transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus{
+    border-color: var(--purple-500);
+    box-shadow: var(--shadow-focus);
+}
+
+form textarea{
+    resize: vertical;
+    min-height: 7rem;
+}
+
+form span{
+    font-size: 0.75rem;
+    color: var(--error);
+    margin-top: -0.75rem;
+    font-weight: 500;
+}
+
+/* === SUCESS === */
+
+.success-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 4rem auto 2rem;
+    gap: 4rem;
+}
+
+.success-box img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 2rem;
+    animation: float 3s ease;
+}
+
+.success-box h1 {
+    color: var(--purple-700);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.success-box p {
+    font-size: 1.125rem;
+    color: var(--gray-400);
+    margin-bottom: 2rem;
+    line-height: 1.75rem;
+}
+
+.success-box button {
+    background-color: var(--purple-500);
+    color: var(--white);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.success-box button:hover {
+    background-color: var(--purple-700);
+    transform: translateY(-0.25rem);
+    box-shadow: var(--shadow-md);
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    padding: 2.5rem;
+    font-weight: 600;
+    background: linear-gradient(to right top, var(--purple-500), var(--purple-800));
+    color: var(--white);
+    margin-top: auto;
+}
+
+/* Responsividade */
+
+/* Smartphones (até 490px) */
+
+@media screen and(max-width: 490px){
+    .menu_content{
+        justify-content: center;
+        padding: 0 1 rem;
+    }
+
+    .menu_list{
+        display: none;
+    }
+    #titulo a{
+        font-size: 1.25rem;
+    }
+    
+    /* Hero */
+    .hero_container{
+        flex-direction: column-reverse;
+        gap: 2rem;
+        padding: 1.5rem 1rem;
+        min-height: auto;
+    }
+
+    .hero_content h4{
+        font-size: 1rem;
+    }
+
+    .hero_content h1{
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .hero_content p{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .hero_buttons{
+        flex-direction: column;
+        width: 100%;
+        gap: 0.75rem;
+    }
+    
+    /* About */
+    .about_container{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .about_content h2{
+        font-size: 1.75rem;
+    }
+
+    .about_content p{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    
+    .about_stats{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .about_stats .botao{
+        width: 100%;
+        font-size: 0.9rem;
+        padding: 0.5rem 1.25rem;
+    }
+
+}
 
